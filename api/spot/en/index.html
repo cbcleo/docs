@@ -6,7 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="../../../images/favicon-7aa1f22d.ico" rel="icon" type="image/ico">
-    <title>FAMEEX API Documentation</title>
+    <title>CBC API Documentation</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -301,7 +301,7 @@
     </a>
     <header>
       <div class="flex_box">
-        <a href="https://www.fameex.com/" class="LG" id="LG"><img src="../../../images/logo-1434fd81.png" class="logo" alt="Logo"></a>
+        <a href="https://www.cryptobridgecenter.com/" class="LG" id="LG"><img src="../../../images/logo-1434fd81.png" class="logo" alt="Logo"></a>
         <div class="nav_box">
           <span class="nav_cell" style="display: none">
             <a href="javascript:;" class="nav_first">v1<i class="icon_nav"></i></a>
@@ -576,7 +576,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://www.fameex.com' target='blank'>FAMEEX Exchange</a></li>
+            <li><a href='https://www.cryptobridgecenter.com' target='blank'>CBC Exchange</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -610,18 +610,18 @@
 <li><p>Websocket market push update:</p>
 
 <ul>
-<li>Update heartbeat connection <code>wss://www.fameex.com/push</code></li>
-<li>Update login information <code>wss://www.fameex.com/push</code></li>
-<li>Delete registration candle information <code>wss://www.fameex.com/push</code></li>
-<li>Delete registration homepage quotes <code>wss://www.fameex.com/push</code></li>
-<li>Delete registration in-depth quotation <code>wss://www.fameex.com/push</code></li>
-<li>Update and push the homepage quotation <code>wss://www.fameex.com/push</code></li>
-<li>Update the push currency pair depth list <code>wss://www.fameex.com/push</code></li>
-<li>Update push K-line/Candlestick data <code>wss://www.fameex.com/push</code></li>
-<li>Update and push the latest transaction order quotation <code>wss://www.fameex.com/push</code></li>
-<li>Delete push order transaction or cancellation <code>wss://www.fameex.com/push</code></li>
-<li>Delete push My order is partially cancelled <code>wss://www.fameex.com/push</code></li>
-<li>Update and logout home page quotes <code>wss://www.fameex.com/push</code></li>
+<li>Update heartbeat connection <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update login information <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Delete registration candle information <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Delete registration homepage quotes <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Delete registration in-depth quotation <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update and push the homepage quotation <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update the push currency pair depth list <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update push K-line/Candlestick data <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update and push the latest transaction order quotation <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Delete push order transaction or cancellation <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Delete push My order is partially cancelled <code>wss://www.cryptobridgecenter.com/push</code></li>
+<li>Update and logout home page quotes <code>wss://www.cryptobridgecenter.com/push</code></li>
 </ul></li>
 <li><p>Updates to the currency trading API interface:</p>
 
@@ -722,15 +722,15 @@
 <h1 id='introduction'>Introduction</h1>
 <p>API overview</p>
 
-<p>FAMEEX provides you with a simple and powerful API interface to help you obtain market information and trade quickly and efficiently.</p>
+<p>CBC provides you with a simple and powerful API interface to help you obtain market information and trade quickly and efficiently.</p>
 
-<p>Before using the API, please create your own API credentials through the FAMEEX UI, obtain your AccessKey and SecretKey, and set the IP access restriction of the API.</p>
+<p>Before using the API, please create your own API credentials through the CBC UI, obtain your AccessKey and SecretKey, and set the IP access restriction of the API.</p>
 
 <p>API trading permissions allow you to quickly obtain the latest market quotations and order book state information, query your available balance, query your current pending orders, buy or sell, and withdraw orders.</p>
 
-<p>FAMEEX official website homepage: <a href="http://www.fameex.com">www.fameex.com</a></p>
+<p>CBC official website homepage: <a href="http://www.cryptobridgecenter.com">www.cryptobridgecenter.com</a></p>
 
-<p>If you have any questions during use, please contact FAMEEX official customer service,</p>
+<p>If you have any questions during use, please contact CBC official customer service,</p>
 
 <p>Our contact information is as follows:</p>
 
@@ -755,14 +755,14 @@
 <td>RESTFUL API</td>
 </tr>
 <tr>
-<td><code>wss://www.fameex.com/ws</code></td>
+<td><code>wss://www.cryptobridgecenter.com/ws</code></td>
 <td>WebSocket Feed (quotes)</td>
 </tr>
 </tbody></table>
 
 <p>All requests are based on the Https protocol, and the contentType in the header information of the POST request needs to be uniformly set to:&#39;application/json&#39;</p>
 
-<p>Accessing FAMEEX-API through a proxy is not recommended due to high latency and poor stability.</p>
+<p>Accessing CBC-API through a proxy is not recommended due to high latency and poor stability.</p>
 <h2 id='restriction-rules'>Restriction rules</h2>
 <p><strong>Limit frequency:</strong> The limit of each interface is different.</p>
 
@@ -867,7 +867,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -931,7 +931,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1030,7 +1030,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1190,7 +1190,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1338,7 +1338,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1474,7 +1474,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1611,7 +1611,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -1860,7 +1860,7 @@
 
 <p><strong>Request path:</strong></p>
 
-<p>wss://www.fameex.com/spot</p>
+<p>wss://www.cryptobridgecenter.com/spot</p>
 
 <p><strong>Request method:</strong></p>
 
@@ -2024,7 +2024,7 @@
 
 <p><strong>Function description:</strong></p>
 
-<p>This interface returns all trading currency pairs supported by the FAMEEX platform.</p>
+<p>This interface returns all trading currency pairs supported by the CBC platform.</p>
 
 <p><strong>Request path:</strong></p>
 
@@ -2128,7 +2128,7 @@
 
 <p><strong>Function description:</strong></p>
 
-<p>This interface returns all trading currencies supported by FAMEEX.</p>
+<p>This interface returns all trading currencies supported by CBC.</p>
 
 <p><strong>Request path:</strong></p>
 
@@ -7738,7 +7738,7 @@
 <td>6. Does the IP of the API need to be bound? Answer: 1. The IP binding of the API effectively prevents servers other than this IP from calling their own authority for transaction operations. 2. After the IP is bound, it can only be accessed by the bound IP. If it is not bound, the access to the IP is not restricted.</td>
 </tr>
 <tr>
-<td>7. Does the API support withdrawals? Answer: No, withdrawals must be made on the FAMEEX official website.</td>
+<td>7. Does the API support withdrawals? Answer: No, withdrawals must be made on the CBC official website.</td>
 </tr>
 <tr>
 <td>8. Can the public key and private key be provided to others? Answer: It is not recommended, it will cause asset loss.</td>
@@ -7774,7 +7774,7 @@
         lang_btn.innerHTML = 'English';
         btn_spot.innerHTML = '现货/杠杆';
         btn_swap.innerHTML = 'U本位合约';
-        LG.href = "https://www.fameex.com/";
+        LG.href = "https://www.cryptobridgecenter.com/";
         lang_btn.href = url.replace('cn/', 'en/');
         btn_spot.href = btn_spot.href.replace('en/', 'cn/');
         btn_swap.href = btn_swap.href.replace('en/', 'cn/');
@@ -7785,7 +7785,7 @@
         lang_btn.innerHTML = '简体中文';
         btn_spot.innerHTML = 'Spot/Margin';
         btn_swap.innerHTML = 'USDⓈ-M Futures';
-        LG.href = "https://www.fameex.com/";
+        LG.href = "https://www.cryptobridgecenter.com/";
         lang_btn.href = url.replace('en/', 'cn/');
         btn_spot.href = btn_spot.href.replace('cn/', 'en/');
         btn_swap.href = btn_swap.href.replace('cn/', 'en/');
@@ -7796,7 +7796,7 @@
         lang_btn.innerHTML = 'English';
         btn_spot.innerHTML = '现货/杠杆';
         btn_swap.innerHTML = 'U本位合约';
-        LG.href = "https://www.fameex.com/";
+        LG.href = "https://www.cryptobridgecenter.com/";
         window.location.pathname = 'docs/api/spot/cn/';
       }
 
